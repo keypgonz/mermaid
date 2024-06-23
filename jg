@@ -1,0 +1,9 @@
+graph TD
+    A[Inicio del Proceso] --> B[Captura de Peces en la Hora i]
+    B --> C[Calcular Volumen Capturado en la Hora i]
+    C --> D[Actualizar Volumen del Contenedor]
+    D --> E[Volumen del Contenedor > Volumen Máximo?]
+    E --> |No| F[Capturar Peces en la Próxima Hora]
+    E --> |Sí| G[Detener la Pesca]
+    F --> D
+    G --> H[Fin del Proceso]
